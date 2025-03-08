@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.tapcontent {
+    background-color: lightskyblue;
+    padding: 0px;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 10px rgb(200, 77, 98);
+    overflow: hidden;
+    scale: 0;
+    opacity: 0;
+       transition:scale 0.5s,opacity 1s;
+}
+
+.tapcontent.active {
+    padding: 20px;
+    height: 250px;
+    scale: 1;
+    opacity: 1;
+}
+
+#tablist {
+    display: flex;
+}
+
+.tab-btn {
+    background-color: bisque;
+    border: 0;
+    padding: 15px;
+    font-size: 18px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: palevioletred;
+}
+
+#html,
+[data-lang='html'] {
+    background-color: lavender;
+}
+
+#css {
+    background-color: lightcoral;
+}
+
+#js {
+    background-color: lightgreen;
+}
+
+#html {
+    background-color: lavender;
+}
